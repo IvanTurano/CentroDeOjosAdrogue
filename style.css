@@ -1,0 +1,1193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', serif;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#cerrar{
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.btn-responsive{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+}
+
+
+/* Botones */
+
+.boton-dorado{
+    display: inline-block;
+    padding: 16px 22px;
+    background-color: #00b4d8;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.boton-dorado:hover{
+    background-color: rgb(0, 26, 49);
+    transform: translateY(-2px); 
+}
+
+/* Tarjetas */
+
+.tarjeta-espacialidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 350px;
+    min-height: 500px;
+    margin: 10px 15px;
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
+    transition: transform .2s ease;
+}
+
+.tarjeta-espacialidad:hover{
+    transform: translateY(-2px); 
+}
+
+.tarjeta-titulo{
+    border-bottom: 1px solid rgb(0, 26, 49);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.tarjeta-titulo h3{
+    color: #001A31;
+    font-weight: 600;
+    font-size: 22px ;
+}
+
+.tarjeta-descripcion{
+    min-height: 200px;
+    padding: 30px;
+    border-bottom: 1px solid rgb(0, 26, 49);
+    width: 100%;
+}
+
+.tarjeta-descripcion p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #001A31;
+}
+
+.tarjeta-tratamientos{
+    min-height: 300px;
+    width: 100%;
+    text-align: left;
+    padding: 30px;
+}
+
+.tarjeta-tratamientos h3{
+    color: #001A31;
+    text-align: left;
+    font-weight: 600;
+    
+}
+
+.tarjeta-tratamientos ul {
+    margin-left: 5px;
+    margin-bottom: 3rem;
+}
+
+.tarjeta-tratamientos ul li {
+    color: #001A31;
+    list-style:inside;
+    margin: 2px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.boton-tarjeta{
+    display: block;
+    padding: 12px 22px;
+    background-color: #00b4d8;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+
+.boton-tarjeta:hover{
+    background-color: rgb(0, 26, 49);
+    transform: translateY(-2px); 
+}
+
+.span-tarjetas{
+    color: #001A31;
+    font-weight: bold;
+}
+
+/* Header */
+
+.contenedor-principal{
+    background-image: url(images/hero.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+    margin: 2.4rem 0;
+    margin-top: 4rem;
+}
+
+
+.header-logo img {
+    width: 170px;
+}
+
+.header-logo a {
+    width: 100%;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+nav ul li {
+    display: inline-block;
+    transition: transform .1s ease;
+}
+
+nav ul li a{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    white-space: nowrap; 
+}
+
+nav ul li:hover{
+    
+    transform: translateY(-2px); 
+}
+
+nav ul li a:hover{
+    color: #ccc;
+}
+
+#turnos{
+    background-color: #00b4d8;
+    padding: 5px;
+}
+
+
+
+.contenedor-titulo{
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+
+}
+
+.titulo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+
+}
+
+.titulo-principal h1{
+    font-size: 5.5rem;
+    font-weight: 300;
+    margin-top: 8.1rem;
+    margin-left: -5px;
+    text-align: left;
+
+}
+
+.titulo-principal h2{
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.titulo-principal p{
+    font-size: 1rem;
+    margin: 12px 0;
+    font-weight: 300;
+}
+
+.titulo-turnos h2{
+    margin: 10px 0;
+}
+
+.flecha{
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 225px;
+    margin-left: 600px;
+}
+
+
+.contenedor-secundario{
+    background-image: url(images/Fondo-especialidades.jpg);
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor-historia{
+    display: flex;
+    width: 60%;
+    margin-top: 60px;
+    
+}
+
+.historia{
+    padding: 20px;
+}
+
+.historia h2{
+    color: #001A31;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.historia h3{
+    color: #001A31;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.historia p{
+    color: #001A31;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.fotos-oficina{
+    min-height: 600px;
+}
+
+.fotos-oficina img{
+    padding: 20px;
+    max-width: 600px;
+    min-width: 500px; 
+    max-height: 600px;
+    display: block;
+}
+
+.fotos-oficina img {
+    transition: opacity 1s ease-in-out;
+}
+
+.fotos-oficina img.fade-out {
+    opacity: 0;
+}
+
+
+/*Especialidades */
+
+.contenedor-especialidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.espacialidades-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+
+.espacialidades-titulo h2{
+    color: rgb(0, 26, 49);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.espacialidades-titulo p {
+    color: rgb(0, 26, 49);
+    font-size: 1.4rem;
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+
+.espacialidades-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* OFTALMOLOGIA DE AVANZADA */
+
+.contenedor-avazanda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.contenedor-avazanda h2 {
+    font-size: 2rem;
+    color: #001A31;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.contenedor-avazanda p{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-tarjetasazules{
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tarjeta-azul{
+    background: transparent linear-gradient(180deg, #001A31 0%, #041323 59%, #051120 100%) 0% 0% no-repeat padding-box;
+    padding: 14px;
+    margin: 15px;
+    height: 270px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 1px 11px 0px rgba(255,255,255,0.20);
+    transition: transform .2s ease;
+}
+
+.tarjeta-azul:hover{
+    transform: translateY(-3px); 
+    box-shadow: -1px 2px 13px 0px rgba(255,255,255,0.30);
+}
+
+.tarjeta-azul svg {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.tarjeta-azul h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tarjeta-azul p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+/*CONSULTA BOTON*/
+
+.contenedor-consulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.contenedor-consulta p {
+    color: #001A31;
+    font-size: 1.67rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+}
+
+.boton-oscuro{
+    display: inline-block;
+    padding: 16px 22px;
+    background-color: #001A31;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.boton-oscuro:hover{
+    background-color: #00b4d8;
+    transform: translateY(-2px); 
+}
+
+
+
+/*COMO PEDIR TURNO*/
+
+.contenedor-pedirturno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+
+.contenedor-pedirturno h2{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    margin-top: 40px;
+    color: #001A31;
+}
+
+.contenedor-pedirturno a {
+    margin-bottom: 30px;
+}
+
+.contenedor-pasos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+}
+
+
+.paso-turno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.circulo{
+    font-size: 2rem;
+    background-color: #001A31;
+    padding: 20px;
+    border-radius: 50em;
+    width: 68px;
+    height: 68px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s ease;
+}
+
+.circulo:hover{
+    background-color: #00b4d8;
+}
+
+.paso-turno p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 8px;
+    color: #001A31;
+    margin-bottom: 40px;
+    
+}
+
+
+/*Ubicacion*/
+
+#ubicacion{
+    color: #001A31;
+}
+
+#ubicacion:hover{
+    color: #00b4d8 ;
+}
+.contenedor-ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ubicacion-main{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+}
+
+.ubicacion-informacion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ubicacion-titulo{
+    display: flex;
+}
+
+.ubicacion-titulo h2, .ubicacion-informacion h2{
+    margin-left: 4px;
+    color: #001A31;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.ubicacion-informacion p{
+    color: #001A31;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+
+
+.contenedor-googlemaps{
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
+}
+
+
+
+
+
+/* CONTACTO */
+
+.contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 40px;
+    box-shadow: 0px 18px 7px 0px rgba(0,0,0,0.32);
+
+}
+
+.titulo-contacto{
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 60px 0;
+}
+
+.contacto-metodos{
+    width: 65%;
+    display: flex;
+    text-align: center;
+}
+
+.contacto-celular{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height:fit-content;
+    padding: 30px;
+    margin-right: 20px;
+    background-color: #fff;
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
+}
+
+.contacto-celular h2 {
+    font-size: 1.5rem;
+    color: #001A31;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contacto-celular p{
+    font-size: 1.3rem;
+    color: #001A31;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/*Formulario Mail*/
+
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
+}
+
+.formulario-contacto h2{
+    color: rgb(0, 26, 49);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.formulario-contacto p{
+    color: rgb(0, 26, 49);
+    font-size: 1.1rem;
+    padding: 5px 20px;
+    text-align: left;
+}
+
+
+form{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label{
+    color: #001A31;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+input,textarea,select{
+    padding: 17px 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #F8F8F8;
+    outline: none;
+    color: #001A31;
+    font-weight: 300;
+    font-size: 20px;
+    resize: none;
+}
+
+
+select option {
+    color: #001A31;
+    font-weight: 300;
+}
+
+.btn-enviar{
+    background-color: #00b4d8;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(0, 26, 49);
+    transform: translateY(-2px); 
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: transparent linear-gradient(180deg, #001A31 0%, #041323 59%, #051120 100%) 0% 0% no-repeat padding-box;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 50px 0;
+
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.logo-redes a{
+    margin: 5px;
+}
+
+.logo-footer {
+    width: 260px;
+}
+
+.footer-contacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.footer-contacto h3{
+    margin-bottom: 22px;
+    font-size: 1.5rem;
+}
+
+.footer-contacto h3 a:hover{
+    color: #00b4d8;
+}
+
+.contacto-info{
+    display: flex;
+    margin: 5px 0;
+}
+
+.contacto-info img {
+    margin-right: 10px;
+}
+
+.info__contacto h4{
+    font-size: 1.2rem;
+}
+
+.info__contacto p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width:1600px){
+
+    header{
+        width: 80%;
+        margin-top: 2.5rem;
+    }
+
+    .contenedor-titulo{
+        width: 77%;
+    }
+
+    .contenedor-historia{
+        width: 80%;
+    }
+
+    .espacialidades-tarjetas{
+        width: 80%;
+    }
+
+    .contenedor-tarjetasazules{
+        width: 80%;
+    }
+
+    .contenedor-pasos{
+        width: 80%;
+    }
+    
+    .ubicacion-main{
+        width: 80%;
+    }
+
+    .contacto-metodos{
+        width: 80%;
+    }
+
+    .contenedor-footer{
+        width: 80%;
+    }
+
+    .flecha{
+        margin-top: 120px;
+        margin-left: 500px;
+    }
+}
+
+
+@media screen and (max-width:1370px){
+
+    header{
+        width: 90%;
+    }
+
+    .contenedor-titulo{
+        width: 87%;
+    }
+
+    .contenedor-historia{
+        width: 90%;
+    }
+
+    .espacialidades-tarjetas{
+        width: 90%;
+    }
+
+    .contenedor-tarjetasazules{
+        width: 90%;
+    }
+
+    .contenedor-pasos{
+        width: 90%;
+    }
+    
+    .ubicacion-main{
+        width: 90%;
+    }
+
+    .contacto-metodos{
+        width: 90%;
+    }
+
+    .contenedor-footer{
+        width: 90%;
+    }
+
+    .flecha{
+        margin-top: 50px;
+        margin-left: 500px;
+    }
+
+    .tarjeta-espacialidad{
+        width: 320px;
+        min-height: 450px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    #menu {
+        display: block;
+        margin: 1em;
+    }
+
+    #cerrar {
+        display: block;
+        font-size: 1.8rem;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    header{
+        display: block;
+    }
+    .header-logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo button{
+        margin-left: 200px;
+    }
+
+    nav {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: start;
+        position: absolute;
+        top: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+        width: auto;
+        right: -20px;
+        background-color: #1e232b;
+        height: 100vh;
+    }
+
+    nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul {
+        display: block;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav ul li a{
+        font-size: 1em;
+         
+    }
+
+    .historia h2{
+        font-size: 2.1rem;
+    }
+
+    .historia h3{
+        font-size: 1.4rem;
+    }
+
+    .historia p{
+        font-size: 1.2rem;
+    }
+
+    .fotos-oficina img{
+        padding: 10px;
+        max-width: 450px;
+        min-width: 400px; 
+        max-height: 450px;
+    }
+
+    .fotos-oficina{
+        min-height: 450px;
+    }
+
+    header{
+        width: 96%;
+    }
+
+    .contenedor-titulo{
+        width: 90%;
+    }
+
+    .contenedor-historia{
+        width: 96%;
+    }
+
+    .espacialidades-tarjetas{
+        width: 96%;
+    }
+
+    .contenedor-tarjetasazules{
+        width: 96%;
+    }
+
+    .contenedor-pasos{
+        width: 96%;
+    }
+    
+    .ubicacion-main{
+        width: 96%;
+    }
+
+    .contacto-metodos{
+        width: 96%;
+    }
+
+    .contenedor-footer{
+        width: 96%;
+    }
+
+    .tarjeta-espacialidad{
+        width: 280px;
+        min-height: 400px;
+    }
+
+    .tarjeta-titulo{
+        height: 70px;
+    }
+
+    .tarjeta-titulo h3{
+        font-size: 18px;
+    }
+
+    .tarjeta-descripcion{
+        min-height: 120px;
+        padding: 15px;
+    }
+
+    .tarjeta-descripcion p{
+        font-size: 16px;
+    }
+
+    .tarjeta-tratamientos{
+        min-height: 200px;
+        padding: 15px;
+    }
+
+    .tarjeta-tratamientos h3{
+        font-size: 18px;
+    }
+
+    .tarjeta-tratamientos ul {
+        margin-left: 3px;
+        margin-bottom: 1.5rem;
+    }
+
+    .tarjeta-tratamientos ul li {
+        margin: 2px 0;
+        font-size: 16px;
+    }
+
+    .tarjeta-azul{
+        padding: 13px;
+        margin: 10px;
+        height: 220px;
+        width: 300px;
+    }
+
+    .tarjeta-azul h3{
+        font-size: 1.1rem;
+    }
+
+    .tarjeta-azul p {
+        font-size: 1rem;
+    }
+
+    .contenedor-googlemaps iframe{
+        width: 500px;
+        height: 360px;
+    }
+
+    .titulo-contacto{
+        color: #001A31;
+    }
+
+    .contacto-metodos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario-contacto{
+        width: auto;
+        margin-top: 30px;
+    }
+    .contacto-celular{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width:850px){
+
+    .contenedor-principal{
+        height: 100vh;
+    }
+
+    .titulo-principal h1 {
+        font-size: 3.7rem;
+        font-weight: 300;
+        margin-top: 6rem;
+    }  
+
+    .titulo-principal h2{
+        font-size: 1.5rem;
+        margin: 5px 0;
+    }
+
+    .titulo-principal p{
+        margin: 8px 0;
+    }
+
+    .titulo-turnos h2{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .flecha{
+        margin-top: 225px;
+        margin-left: 350px;
+    }
+
+    .contenedor-historia{
+        flex-direction: column;
+    }
+
+    .historia h2{
+        font-size: 2.6rem;
+    }
+
+    .fotos-oficina{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .espacialidades-titulo{
+        width: 90%;
+    }
+
+    .espacialidades-titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .espacialidades-titulo p{
+        font-size: 1.2rem;
+    }
+    
+}
