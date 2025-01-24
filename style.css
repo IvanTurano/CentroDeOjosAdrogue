@@ -52,107 +52,7 @@ body{
     transform: translateY(-2px); 
 }
 
-/* Tarjetas */
 
-.tarjeta-espacialidad{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    width: 350px;
-    min-height: 500px;
-    max-height: 550px;
-    margin: 10px 15px;
-    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
-    transition: transform .2s ease;
-}
-
-.tarjeta-espacialidad:hover{
-    transform: translateY(-2px); 
-}
-
-.tarjeta-titulo{
-    border-bottom: 1px solid rgb(0, 26, 49);
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-
-.tarjeta-titulo h3{
-    color: #001A31;
-    font-weight: 600;
-    font-size: 22px ;
-}
-
-.tarjeta-descripcion{
-    min-height: 200px;
-    padding: 30px;
-    border-bottom: 1px solid rgb(0, 26, 49);
-    width: 100%;
-}
-
-.tarjeta-descripcion p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #001A31;
-}
-
-.tarjeta-tratamientos{
-    min-height: 200px;
-    width: 100%;
-    text-align: left;
-    padding: 0 30px;
-    padding-top: 20px;
-}
-
-.tarjeta-tratamientos h3{
-    color: #001A31;
-    text-align: left;
-    font-weight: 600;
-    
-}
-
-.tarjeta-tratamientos ul {
-    margin-left: 5px;
-    margin-bottom: 3rem;
-}
-
-.tarjeta-tratamientos ul li {
-    color: #001A31;
-    list-style:inside;
-    margin: 2px 0;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.boton-tarjeta{
-    display: block;
-    padding: 12px 22px;
-    background-color: #00b4d8;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: transform .2s ease;
-}
-
-
-.boton-tarjeta:hover{
-    background-color: rgb(0, 26, 49);
-    transform: translateY(-2px); 
-}
-
-.span-tarjetas{
-    color: #001A31;
-    font-weight: bold;
-}
 
 /* Header */
 
@@ -353,7 +253,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .espacialidades-titulo{
@@ -368,7 +268,8 @@ nav ul li a:hover{
     color: rgb(0, 26, 49);
     font-size: 2.5rem;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 25px 0;
+    
 }
 
 .espacialidades-titulo p {
@@ -386,8 +287,87 @@ nav ul li a:hover{
     justify-content: center;
 }
 
+/* Tarjetas */
 
-/* OFTALMOLOGIA DE AVANZADA */
+.tarjeta-espacialidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 350px;
+    min-height: 300px;
+    margin: 10px 15px;
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
+    transition: transform .2s ease;
+}
+
+.tarjeta-espacialidad:hover{
+    transform: translateY(-2px); 
+}
+
+.tarjeta-titulo{
+    border-bottom: 1px solid rgb(0, 26, 49);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.tarjeta-titulo h3{
+    color: #001A31;
+    font-weight: 600;
+    font-size: 22px ;
+}
+
+.tarjeta-descripcion{
+    min-height: 190px;
+    padding: 30px;
+    border-bottom: 1px solid rgb(0, 26, 49);
+    width: 100%;
+}
+
+.tarjeta-descripcion p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #001A31;
+}
+
+.tarjeta-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.boton-tarjeta{
+    display: block;
+    padding: 12px 22px;
+    background-color: #00b4d8;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+
+.boton-tarjeta:hover{
+    background-color: rgb(0, 26, 49);
+    transform: translateY(-2px); 
+}
+
+.span-tarjetas{
+    color: #001A31;
+    font-weight: bold;
+}
+
+
+/* PORQUE ELEGIRNOS */
 
 .contenedor-avazanda{
     display: flex;
@@ -400,20 +380,21 @@ nav ul li a:hover{
 }
 
 .contenedor-avazanda h2 {
-    font-size: 2rem;
-    color: #001A31;
+    font-size: 2.3rem;
+    color: #FFF;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
 .contenedor-avazanda p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
+    padding: 10px 50px;
 }
 
 .contenedor-tarjetasazules{
     display: flex;
-    width: 65%;
+    width: 50%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -421,42 +402,54 @@ nav ul li a:hover{
 }
 
 .tarjeta-azul{
-    background: transparent linear-gradient(180deg, #001A31 0%, #041323 59%, #051120 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #ccc;
+    background-color: #FFF;
     padding: 14px;
     margin: 15px;
-    height: 270px;
-    width: 360px;
+    height: 180px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: -1px 1px 11px 0px rgba(255,255,255,0.20);
-    transition: transform .2s ease;
+    justify-content: center;
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.1);
+    transition: transform .5s ease;
 }
 
 .tarjeta-azul:hover{
-    transform: translateY(-3px); 
-    box-shadow: -1px 2px 13px 0px rgba(255,255,255,0.30);
+    transform: translateY(-5px); 
+    box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.40);
 }
-
-.tarjeta-azul svg {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
 
 .tarjeta-azul h3{
-    margin-top: 10px;
     text-align: center;
-    font-size: 1.2rem;
-}
-
-.tarjeta-azul p {
-    text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
+    text-transform: uppercase;
+    color: #001A31;
     margin-top: 10px;
 }
 
+.tarjeta-azul img {
+    width: 50px;
+}
+
+
+/* CARRUSEL DE IMAGENES*/
+
+.contenedor-imagenes{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes-titulo{
+    align-content: center;
+    margin: 10px 0;
+    width: 65%;
+}
 
 /*CONSULTA BOTON*/
 
@@ -594,7 +587,7 @@ nav ul li a:hover{
 /*Ubicacion*/
 
 #ubicacion{
-    color: #fff;
+    color: #001A31;
 }
 
 #ubicacion:hover{
@@ -628,7 +621,7 @@ nav ul li a:hover{
 
 .ubicacion-titulo h2, .ubicacion-informacion h2{
     margin-left: 4px;
-    color: #fff;
+    color: #001A31;
     font-weight: 400;
     font-size: 2rem;
     text-align: left;
@@ -636,7 +629,7 @@ nav ul li a:hover{
 }
 
 .ubicacion-informacion p{
-    color: #fff;
+    color: #001A31;
     font-size: 1.6rem;
     margin-bottom: 5px;
     font-weight: 300;
@@ -880,7 +873,7 @@ footer{
     }
 
     .contenedor-tarjetasazules{
-        width: 80%;
+        width: 70%;
     }
 
     .contenedor-pasos{
@@ -925,7 +918,7 @@ footer{
     }
 
     .contenedor-tarjetasazules{
-        width: 90%;
+        width: 80%;
     }
 
     .contenedor-pasos{
@@ -951,7 +944,7 @@ footer{
 
     .tarjeta-espacialidad{
         width: 320px;
-        min-height: 450px;
+       
     }
 }
 
@@ -963,9 +956,9 @@ footer{
 
     #cerrar {
         display: block;
-        font-size: 1.8rem;
-        margin-top: 10px;
-        margin-left: 10px;
+        font-size: 2.3rem;
+        margin-top: 20px;
+        margin-left: 15px;
     }
 
     header{
@@ -1078,7 +1071,6 @@ footer{
 
     .tarjeta-espacialidad{
         width: 280px;
-        min-height: 400px;
     }
 
     .tarjeta-titulo{
@@ -1091,36 +1083,12 @@ footer{
 
     .tarjeta-descripcion{
         padding: 15px;
+        height: 130px;
+        min-height: auto;
     }
 
     .tarjeta-descripcion p{
         font-size: 16px;
-    }
-
-    .tarjeta-tratamientos{
-        min-height: 200px;
-        padding: 15px;
-    }
-
-    .tarjeta-tratamientos h3{
-        font-size: 18px;
-    }
-
-    .tarjeta-tratamientos ul {
-        margin-left: 3px;
-        margin-bottom: 1.5rem;
-    }
-
-    .tarjeta-tratamientos ul li {
-        margin: 2px 0;
-        font-size: 16px;
-    }
-
-    .tarjeta-azul{
-        padding: 13px;
-        margin: 10px;
-        height: 220px;
-        width: 300px;
     }
 
     .tarjeta-azul h3{
@@ -1136,9 +1104,6 @@ footer{
         height: 360px;
     }
 
-    
-
-
     .contacto-metodos{
         flex-direction: column;
         align-items: center;
@@ -1149,6 +1114,7 @@ footer{
         width: auto;
         margin-top: 30px;
     }
+
     .contacto-celular{
         margin-right: 0;
     }
@@ -1202,6 +1168,7 @@ footer{
 
     .espacialidades-titulo{
         width: 90%;
+        text-align: center;
     }
 
     .espacialidades-titulo h2{
@@ -1240,16 +1207,23 @@ footer{
         color: #001A31;
     }
 
-    .tarjeta-azul p{
-        color: #fff;
+    .contenedor-avazanda{
+        width: 100%;
+        background-color: #fff;
+        padding-bottom: 30px;
     }
 
-    .contenedor-avazanda{
-        width: 95%;
+    .contenedor-avazanda h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        color: #001A31;
+        margin-top: 40px;
     }
 
     .contenedor-consulta p{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0 10px;
     }
 
     .contenedor-pasos{
@@ -1285,12 +1259,7 @@ footer{
         min-width: 350px; 
         max-height: 450px;
     }
-
-    .contenedor-avazanda h2 {
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
+    
     .contenedor-contacto{
         width: 98%;
     }
@@ -1298,6 +1267,27 @@ footer{
     .logo-footer{
         width: 140px;
     }
+
+    .contenedor-ubicacion{
+        background-color: #fff;
+    }
+
+    .ubicacion-titulo h2{
+        color: #001A31;
+    }
+
+    .ubicacion-informacion p{
+        color: #001A31;
+    }
+
+    .ubicacion-informacion a{
+        color: #001A31;
+    }
+
+    .ubicacion-informacion h2{
+        color: #001A31;
+    }
+    
 }
 
 @media screen and (max-width:480px){
