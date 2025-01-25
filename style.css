@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --color-primario: #5fa8d3;
+    --color-secundario: #1b4965;
+    --color-texto: #1b4965;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,22 +39,49 @@ body{
 
 /* Botones */
 
-.boton-dorado{
+.boton-principal{
     display: inline-block;
-    padding: 16px 22px;
-    background-color: #00b4d8;
+    padding: 14px 22px;
+    background-color: var(--color-primario);
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
     text-align: center;
     cursor: pointer;
     transition: transform .2s ease;
 }
 
-.boton-dorado:hover{
-    background-color: rgb(0, 26, 49);
+.boton-principal:hover{
+    background-color: var(--color-secundario);
+    transform: translateY(-2px); 
+}
+
+.boton-secundario{
+    display: inline-block;
+    padding: 14px 22px;
+    background-color: var(--color-secundario);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: transform .2s ease;
+}
+
+.boton-secundario img{
+    width: 18px;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+
+.boton-secundario:hover{
+    background-color: var(--color-primario);
     transform: translateY(-2px); 
 }
 
@@ -57,13 +90,13 @@ body{
 /* Header */
 
 .contenedor-principal{
-    background-image: url(images/hero.jpg);
+    background-image: url(images/hero1.jpg);
     background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 header{
@@ -90,9 +123,8 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     width: 100%;
-    flex-grow: 1;
     flex-wrap: nowrap;
     margin-right: 20px;
 }
@@ -160,7 +192,7 @@ nav ul li a:hover{
 .titulo-principal h2{
     font-size: 2rem;
     margin: 10px 0;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .titulo-principal p{
@@ -169,20 +201,19 @@ nav ul li a:hover{
     font-weight: 300;
 }
 
+.titulo-turnos{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
 .titulo-turnos h2{
     margin: 10px 0;
+    margin-top: 30px;
 }
-
-.flecha{
-    font-size: 3rem;
-    color: #fff;
-    margin-top: 225px;
-    margin-left: 600px;
-}
-
 
 .contenedor-secundario{
-    background-image: url(images/Fondo-especialidades.jpg);
+    background-image: url(images/fondo.jpg);
     min-height: 100vh;
     overflow-x: hidden;
     display: flex;
@@ -253,7 +284,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .espacialidades-titulo{
@@ -295,18 +326,20 @@ nav ul li a:hover{
     align-items: center;
     background-color: #fff;
     width: 350px;
-    min-height: 300px;
+    min-height: 180px;
     margin: 10px 15px;
-    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.50);
     transition: transform .2s ease;
+
+    border-radius: 20px;
 }
 
 .tarjeta-espacialidad:hover{
-    transform: translateY(-2px); 
+    transform: translateY(-3px); 
 }
 
 .tarjeta-titulo{
-    border-bottom: 1px solid rgb(0, 26, 49);
+    border-bottom: 1px solid var(--color-primario);
     width: 100%;
     text-align: center;
     display: flex;
@@ -324,7 +357,6 @@ nav ul li a:hover{
 .tarjeta-descripcion{
     min-height: 190px;
     padding: 30px;
-    border-bottom: 1px solid rgb(0, 26, 49);
     width: 100%;
 }
 
@@ -339,15 +371,16 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-top: 50px;
 }
 
 .boton-tarjeta{
     display: block;
-    padding: 12px 22px;
-    background-color: #00b4d8;
+    padding: 16px 24px;
+    background-color: var(--color-primario);
     color: #fff;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
@@ -357,7 +390,7 @@ nav ul li a:hover{
 
 
 .boton-tarjeta:hover{
-    background-color: rgb(0, 26, 49);
+    background-color: var(--color-secundario);
     transform: translateY(-2px); 
 }
 
@@ -367,7 +400,7 @@ nav ul li a:hover{
 }
 
 
-/* PORQUE ELEGIRNOS */
+/* GUARDIAS */
 
 .contenedor-avazanda{
     display: flex;
@@ -375,14 +408,14 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
 .contenedor-avazanda h2 {
-    font-size: 2.3rem;
-    color: #FFF;
-    letter-spacing: 2px;
+    font-size: 2.6rem;
+    color: #001A31;
+    letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
@@ -406,32 +439,39 @@ nav ul li a:hover{
     background-color: #FFF;
     padding: 14px;
     margin: 15px;
-    height: 180px;
-    width: 250px;
+    min-height: 280px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.1);
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.3);
     transition: transform .5s ease;
 }
 
 .tarjeta-azul:hover{
     transform: translateY(-5px); 
-    box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.40);
+    box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.50);
 }
 
 .tarjeta-azul h3{
     text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.7rem;
+    font-weight: 400;
     text-transform: uppercase;
     color: #001A31;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.tarjeta-azul p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #001A31;
 }
 
 .tarjeta-azul img {
-    width: 50px;
+    width: 70px;
+    margin-top: 20px;
 }
 
 
@@ -443,13 +483,44 @@ nav ul li a:hover{
     background-color: #fff;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
 }
 
 .imagenes-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     margin: 10px 0;
     width: 65%;
 }
+.imagenes-titulo h2{
+    font-size: 2.2rem;
+    color: #001A31;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imagenes-carrusel{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 30px;
+    padding: 10px 15px;
+    padding-bottom: 20px;
+}
+
+.imagenes-carrusel img{
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.imagenes-carrusel img:hover{
+    transform: translateY(-5px); 
+    box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.20);
+}
+
 
 /*CONSULTA BOTON*/
 
@@ -460,13 +531,13 @@ nav ul li a:hover{
     align-items: center;
     margin: 80px 0;
     width: 100%;
-    background: transparent linear-gradient(180deg, #001A31 0%, #041323 59%, #051120 100%) 0% 0% no-repeat padding-box;
+    background-image: linear-gradient(to right top, #1b4965, #2c5f7f, #3d779a, #4e8fb6, #5fa8d3);
     padding: 80px 0;
 }
 
 .contenedor-consulta p {
     color: #fff;
-    font-size: 1.67rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 30px;
     
@@ -511,79 +582,6 @@ nav ul li a:hover{
 }
 
 
-
-/*COMO PEDIR TURNO*/
-
-.contenedor-pedirturno{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    background-color: #fff;
-}
-
-
-.contenedor-pedirturno h2{
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    margin-top: 40px;
-    color: #001A31;
-}
-
-.contenedor-pedirturno a {
-    margin-bottom: 30px;
-}
-
-.contenedor-pasos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 65%;
-}
-
-
-.paso-turno{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-}
-
-.circulo{
-    font-size: 2rem;
-    background-color: #001A31;
-    padding: 20px;
-    border-radius: 50em;
-    width: 68px;
-    height: 68px;
-    font-weight: 600;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background .2s ease;
-}
-
-.circulo:hover{
-    background-color: #00b4d8;
-}
-
-.paso-turno p {
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 8px;
-    color: #001A31;
-    margin-bottom: 40px;
-    
-}
-
-
 /*Ubicacion*/
 
 #ubicacion{
@@ -617,6 +615,7 @@ nav ul li a:hover{
 
 .ubicacion-titulo{
     display: flex;
+    margin-top: 60px;
 }
 
 .ubicacion-titulo h2, .ubicacion-informacion h2{
@@ -658,7 +657,7 @@ nav ul li a:hover{
 }
 
 .titulo-contacto{
-    color: #FFF;
+    color: #001A31;
     font-size: 3rem;
     font-weight: 600;
     margin: 60px 0;
@@ -762,7 +761,7 @@ select option {
 }
 
 .btn-enviar{
-    background-color: #00b4d8;
+    background-color: var(--color-primario);
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
@@ -770,10 +769,12 @@ select option {
     letter-spacing: 1px;
     text-align: center;
     cursor: pointer;
+    transition: background .2s ease;
+    transition: transform .2s ease;
 }
 
 .btn-enviar:hover{
-    background-color: rgb(0, 26, 49);
+    background-color: var(--color-secundario);
     transform: translateY(-2px); 
 }
 
@@ -787,7 +788,7 @@ footer{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: transparent linear-gradient(180deg, #001A31 0%, #041323 59%, #051120 100%) 0% 0% no-repeat padding-box;
+    background-image: linear-gradient(to right top, #1b4965, #2c5f7f, #3d779a, #4e8fb6, #5fa8d3);
 }
 
 .contenedor-footer{
@@ -997,6 +998,7 @@ footer{
 
     nav ul {
         display: block;
+        margin-right: 100px;
 
     }
 
@@ -1205,6 +1207,7 @@ footer{
     .contenedor-avazanda p{
         font-size: 1.1rem;
         color: #001A31;
+        padding: 10px;
     }
 
     .contenedor-avazanda{
@@ -1297,7 +1300,11 @@ footer{
     }
 
     .titulo-principal h1{
-        margin-top: 1px;
+        margin-top: 90px;
+    }
+
+    .titulo-turnos{
+        margin-top: 108px;
     }
 
     
