@@ -1,7 +1,8 @@
 const imagenes = [
     "images/frente.jpg",
     "images/sala1.jpg",
-    "images/sala2.jpg"
+    "images/carrusel/7.jpeg",
+    "images/carrusel/8.jpeg"
 ];
 
 let indiceActual = 0;
@@ -31,6 +32,9 @@ cerrar.addEventListener("click",() => {
     nav.classList.remove("visible")
 })
 
+
 setInterval( () => {
-    nav.classList.remove("visible")
+    if(nav.classList.contains("visible")){
+        nav.classList.remove("visible")
+    }  
 }, 6000)
