@@ -228,6 +228,7 @@ nav ul li a:hover{
 
 .contenedor-historia{
     display: flex;
+    flex-direction: column;
     width: 60%;
     margin-top: 60px;
     
@@ -235,38 +236,44 @@ nav ul li a:hover{
 
 .historia{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .historia h2{
-    color: #001A31;
-    font-size: 2.6rem;
-    font-weight: 600;
-    margin-bottom: 5px;
+    color: rgb(0, 26, 49);
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    margin: 20px 0;
 }
 
 .historia h3{
-    color: #001A31;
-    font-size: 1.9rem;
-    font-weight: 400;
-    margin-bottom: 20px;
+    color: rgb(0, 26, 49);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 5px 0;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .historia p{
     color: #001A31;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 4px;
 }
 
 .fotos-oficina{
-    min-height: 600px;
+    min-height: 760px;
 }
 
 .fotos-oficina img{
     padding: 20px;
-    max-width: 600px;
+    max-width: 700px;
     min-width: 500px; 
-    max-height: 600px;
+    max-height: 700px;
     display: block;
 }
 
@@ -290,7 +297,7 @@ nav ul li a:hover{
     margin-top: 4rem;
 }
 
-.espacialidades-titulo{
+.especialidades-titulo--desc{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,19 +305,21 @@ nav ul li a:hover{
     width: 65%;
 }
 
-.espacialidades-titulo h2{
+.especialidades-titulo--desc h2{
     color: rgb(0, 26, 49);
     font-size: 2.5rem;
     text-transform: uppercase;
-    margin: 25px 0;
+    margin: 20px 0;
     
 }
 
-.espacialidades-titulo p {
+.especialidades-titulo--desc p {
     color: rgb(0, 26, 49);
     font-size: 1.4rem;
-    margin: 10px 0;
+    font-weight: 300;
+    margin: 5px 0;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .espacialidades-tarjetas{
@@ -364,8 +373,8 @@ nav ul li a:hover{
 }
 
 .tarjeta-descripcion p {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     color: #001A31;
 }
 
@@ -402,6 +411,96 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
+/* Estudios y practicas*/
+
+
+.contenedor-estudios__practicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.estudios-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+
+.estudios-titulo h2{
+    color: rgb(0, 26, 49);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+    
+}
+
+.estudios-titulo p {
+    color: rgb(0, 26, 49);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 5px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.estudios-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-estudios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 450px;
+    min-height: 180px;
+    margin: 10px 15px;
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.50);
+    transition: transform .2s ease;
+    border-radius: 20px;
+}
+
+.tarjeta-estudios:hover{
+    transform: translateY(-3px); 
+}
+
+.tarjeta-estudios__titulo{
+    border-bottom: 1px solid var(--color-primario);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.tarjeta-estudios__titulo h3{
+    color: #001A31;
+    font-weight: 600;
+    font-size: 22px ;
+}
+
+.tarjeta-estudios__descripcion{
+    min-height: 190px;
+    padding: 25px;
+    width: 100%;
+}
+
+.tarjeta-estudios__descripcion p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #001A31;
+}
 
 /* GUARDIAS */
 
