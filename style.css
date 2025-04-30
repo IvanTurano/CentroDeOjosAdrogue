@@ -216,7 +216,9 @@ nav ul li a:hover{
 }
 
 .contenedor-secundario{
-    background-image: url(images/fondo.jpg);
+    background-image: url(images/fondo.webp);
+    background-repeat: repeat;
+    background-size: auto;
     min-height: 100vh;
     overflow-x: hidden;
     display: flex;
@@ -229,6 +231,8 @@ nav ul li a:hover{
 .contenedor-historia{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 60%;
     margin-top: 60px;
     
@@ -252,7 +256,7 @@ nav ul li a:hover{
 .historia h3{
     color: rgb(0, 26, 49);
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 5px 0;
     margin-bottom: 30px;
     text-align: center;
@@ -261,30 +265,32 @@ nav ul li a:hover{
 .historia p{
     color: #001A31;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 4px;
 }
 
-.fotos-oficina{
-    min-height: 760px;
+
+.equipo-medico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
-.fotos-oficina img{
-    padding: 20px;
-    max-width: 700px;
-    min-width: 500px; 
-    max-height: 700px;
-    display: block;
+.equipo-medico h2{
+    color: rgb(0, 26, 49);
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
 }
 
-.fotos-oficina img {
-    transition: opacity 1s ease-in-out;
+.equipo-medico p {
+    color: #001A31;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 4px;
 }
-
-.fotos-oficina img.fade-out {
-    opacity: 0;
-}
-
 
 /*Especialidades */
 
@@ -607,7 +613,7 @@ nav ul li a:hover{
 
 .imagenes-carrusel{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-gap: 30px;
     padding: 10px 15px;
     padding-bottom: 20px;
@@ -754,7 +760,6 @@ nav ul li a:hover{
     justify-content: center;
     width: 100%;
     padding-bottom: 40px;
-    box-shadow: 0px 18px 7px 0px rgba(0,0,0,0.32);
 
 }
 
@@ -769,6 +774,13 @@ nav ul li a:hover{
     width: 65%;
     display: flex;
     text-align: center;
+}
+
+.contacto-telefonico{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 20px;
 }
 
 .contacto-celular{
@@ -790,6 +802,33 @@ nav ul li a:hover{
 }
 
 .contacto-celular p{
+    font-size: 1.3rem;
+    color: #001A31;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contacto-telefonofijo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:fit-content;
+    padding: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: -1px 1px 11px 0px rgba(0,0,0,0.29);
+}
+
+.contacto-telefonofijo h2{
+    font-size: 1.5rem;
+    color: #001A31;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contacto-telefonofijo p{
     font-size: 1.3rem;
     color: #001A31;
     font-weight: 300;
@@ -1217,9 +1256,12 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .contacto-telefonico{
+        margin-right: 0;
+    }
 
     .formulario-contacto{
-        width: auto;
+        width: 100%;
         margin-top: 30px;
     }
 
@@ -1269,6 +1311,17 @@ footer{
         font-size: 2.6rem;
     }
 
+    .equipo-medico h2{
+        font-size: 2.5rem;
+    }
+
+    .equipo-medico{
+        padding: 20px;
+    }
+
+    .equipo-medico p{
+        font-size: 1.3rem;
+    }
     .fotos-oficina{
         display: flex;
         align-items: center;
@@ -1298,6 +1351,35 @@ footer{
     .contenedor-googlemaps iframe{
         width: 500px;
         height: 360px;
+    }
+
+    .estudios-tarjetas{
+        width: 90%;
+    }
+
+    .estudios-titulo h2{
+        font-size: 2rem ;
+        text-align: center;
+    }
+
+    .estudios-titulo p {
+        font-size: 1.2rem;
+    }
+
+    .tarjeta-estudios{
+        width: 320px;
+    }
+
+    .tarjeta-estudios__titulo h3 {
+        font-size: 1.2rem;
+    }
+
+    .tarjeta-estudios__descripcion{
+        padding: 15px;
+    }
+
+    .tarjeta-estudios__descripcion p{
+        font-size: 1rem;
     }
     
 }
@@ -1397,6 +1479,23 @@ footer{
     .ubicacion-informacion h2{
         color: #001A31;
     }
+
+    .contacto-telefonofijo{
+        margin: 0;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .contacto-celular{
+        margin: 0;
+        padding: 20px;
+    }
+
+    .contacto-metodos{
+        align-items: flex-start;
+    }
+
+    
     
 }
 
