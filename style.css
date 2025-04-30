@@ -1309,6 +1309,7 @@ footer{
 
     .historia h2{
         font-size: 2.6rem;
+        text-align: center;
     }
 
     .equipo-medico h2{
@@ -1358,7 +1359,7 @@ footer{
     }
 
     .estudios-titulo h2{
-        font-size: 2rem ;
+        font-size: 1.7rem;
         text-align: center;
     }
 
@@ -1500,6 +1501,11 @@ footer{
 }
 
 @media screen and (max-width:480px){
+
+    .contenedor-secundario{
+        background-size: contain;
+    }
+    
     .header-logo img {
         width: 100px;
         margin-left: 10px;
