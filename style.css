@@ -1505,7 +1505,23 @@ footer{
     .contenedor-secundario{
         background-size: contain;
     }
-    
+
+    .especialidades-titulo--desc{
+        width: 96%;
+    }
+
+    .estudios-titulo{
+        width: 96%;
+    }
+
+    .historia h3{
+        margin-bottom: 5px;
+    }
+
+    .historia p {
+        margin: 10px 0;
+    }
+
     .header-logo img {
         width: 100px;
         margin-left: 10px;
